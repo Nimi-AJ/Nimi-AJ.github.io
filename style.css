@@ -25,29 +25,73 @@ color: turquoise;
 }
 .nav2 {
     border-top: 1px solid #dcdacb;
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
     display: flex;
     justify-content: space-around;
 }
-.nav_list  {
+.nav1 li a:hover {
+    color: turquoise;
+    }
+
+.nav_list1  {
     display:flex;
     list-style: none;
+    width: 100%;
+    height: auto;
 
 }
-.nav_list li {
+.nav_list1 li {
     padding: 0px 10px;
     line-height: 50px;
    
 }
-.nav_list li a {
+.nav_list1 li a {
 text-decoration: none;
 color: grey;
 }
 
-.nav1 li a:hover {
-color: turquoise;
+.nav2 li a:hover {
+    color: turquoise;
+    }
+
+.nav_list2  {
+    display:flex;
+    list-style: none;
+    width: 100%;
+    height: auto;
+
 }
+.nav_list2 li {
+    padding: 0px 10px;
+    line-height: 50px;
+   
+}
+.nav_list2 li a {
+text-decoration: none;
+color: grey;
+}
+
+#search {
+    border-style: none;
+    border-color: white;
+    height: fit-content;    
+    font-size: 0.9em;
+    width: 350px;
+    padding: 10px;
+    line-height: 25px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    border: 0.2px solid grey;
+    outline: none;
+}
+
+
+
+
+
+
+
 
 
 
@@ -60,13 +104,14 @@ color: turquoise;
 }
 
 
+
+
+
 .card1 {
     width: 250px;
     margin: 10px 10px;
     padding: 10px 10px;
-    box-sizing: content-box;
-    border: 20px;
-    border: 1px solid black;
+   
     position: relative;
 }
 .card1 img {
@@ -90,9 +135,9 @@ color: turquoise;
     position:absolute;
     border-style: groove;
     border-width: 1px;
-    margin: 10px 10px;
-    padding: 0 10px;
-    text-align: left;
+    margin:auto;
+    padding: 10px 10px;
+    text-align: justify;
     width: 300px;
     font-size: 0.9em;
     z-index: 1;
@@ -103,6 +148,9 @@ color: turquoise;
  right:-15em;
  bottom:15em;
 }
+
+
+
 
 
  .card2 {    
@@ -131,9 +179,9 @@ color: turquoise;
     position:absolute;
     border-style: groove;
     border-width: 1px;
-    margin: 10px 10px;
-    padding: 0 10px;
-    text-align: left;
+    margin:auto;
+    padding: 10px 10px;
+    text-align: justify;
     width: 300px;
     font-size: 0.9em;
     height: 200px;
@@ -144,6 +192,8 @@ color: turquoise;
     right:-15em;
     bottom:15em;
 }
+
+
 
 
 
@@ -174,7 +224,7 @@ color: turquoise;
         border-width: 1px;
         margin:auto;
         padding: 10px 10px;
-        text-align: center;
+        text-align: justify;
         position:absolute;
         z-index: 1;
 }
@@ -183,9 +233,6 @@ color: turquoise;
     right:-15em;
     bottom:15em;
 }
-
-
-
 
 
 
@@ -219,7 +266,7 @@ color: turquoise;
     border-width: 1px;
     margin:auto;
     padding: 10px 10px;
-    text-align: center;
+    text-align: justify;
     position:absolute
 }
 .card4:hover .hidden4 {
@@ -227,6 +274,9 @@ color: turquoise;
     left:-15em;
     bottom:15em;
 }
+
+
+
 
 
 .list_container {
@@ -238,29 +288,71 @@ color: turquoise;
 ul {
     list-style-image: url(https://mdn.mozillademos.org/files/11981/starsolid.gif);
 }
-
 .page_center {
-   
     height: 25rem;
     overflow: hidden;
-    border: 1px solid black;
+    
     background-image: url(img/udemy_background.jpg  );
     margin-bottom: 50px;
-    position: relative
+    position: relative;
 }
-
 .page_center .img {
     max-width: 100%;
     height: auto;
 }
-
 .center_message {
     box-sizing: border-box;
-    background-color: white;
-    border-style:groove;
     width: 34rem;
     left: 2.4rem;
     top: 2.4rem;
     margin: 10px 20px; 
+    color: #3c3b37;  
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    padding: 2.4rem; 
+}
+
+.center_message p {
+    display: block;
+    text-align: left;
+}
+
+.center_message h1 {
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+#table-wrapper {
+    margin: 20px 20px;
+}
+#table {
+    border-collapse:collapse
+    empty-cells: hide;
     
+    padding: 10px;
+}
+
+th {
+    display: table-cell;
+    border: 1px solid gray;   
+   max-width: 800px;
+   text-align: center;
+
+}
+td {
+    display: table-cell;
+    border: 1px solid gray;   
+   width: auto;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(201, 190, 175);
 }
