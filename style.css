@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a:hover {
+    color: turquoise;
+}
+
+.wrapper a{
+    text-decoration: none;
+    color: black;
+}
+.wrapper a:hover {
+color: turquoise;
+}
+
+.nav1 {
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.nav2 {
+    border-top: 1px solid #dcdacb;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.nav_list  {
+    display:flex;
+    list-style: none;
+
+}
+.nav_list li {
+    padding: 0px 10px;
+    line-height: 50px;
+   
+}
+.nav_list li a {
+text-decoration: none;
+color: grey;
+}
+
+.nav1 li a:hover {
+color: turquoise;
+}
+
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 20px;
+    margin: 100px 50px;
+  
+}
+
+
+.card1 {
+    width: 250px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    box-sizing: content-box;
+    border: 20px;
+    border: 1px solid black;
+    position: relative;
+}
+.card1 img {
+    width: 100%;
+    display: block;
+}
+.card1 i {
+    font-size: 0.9em;
+    margin-right: 8px;
+}
+.card1 .container {
+    margin: 10px;
+    font-size: small;
+    display: block;
+}
+.hidden1 {
+    box-sizing: border-box;
+    background-color: rgb(247, 238, 238);
+    display:none;
+    border-radius: 3px;
+    position:absolute;
+    border-style: groove;
+    border-width: 1px;
+    margin: 10px 10px;
+    padding: 0 10px;
+    text-align: left;
+    width: 300px;
+    font-size: 0.9em;
+    z-index: 1;
+    
+}
+.card1:hover  .hidden1 {
+ display:block;
+ right:-15em;
+ bottom:15em;
+}
+
+
+ .card2 {    
+    width: 250px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    position: relative;
+}
+.card2 img {
+    width: 100%;
+    display: block;
+}
+.card2 i {
+    font-size: 0.9em;
+    margin-right: 8px;
+}
+.card2 .container {
+    margin: 10px;
+    font-size: small;
+}
+.hidden2 {
+    box-sizing: border-box;
+    background-color: rgb(247, 238, 238);
+    display:none;
+    border-radius: 3px;
+    position:absolute;
+    border-style: groove;
+    border-width: 1px;
+    margin: 10px 10px;
+    padding: 0 10px;
+    text-align: left;
+    width: 300px;
+    font-size: 0.9em;
+    height: 200px;
+    z-index: 1;
+}
+.card2:hover .hidden2 {
+    display:block;
+    right:-15em;
+    bottom:15em;
+}
+
+
+
+.card3 {
+    width: 250px;
+    margin: 0 10px;
+    position: relative;
+}
+.card3 img {
+    width: 100%;
+    display: block;
+}
+.card3 i {
+    font-size: 0.9em;
+    margin-right: 8px;
+}
+.card3 .container {
+    margin: 10px;
+    font-size: small;
+}
+.hidden3 {
+        box-sizing: border-box;
+        background-color: rgb(247, 238, 238);
+        display:none;
+        border-radius: 3px;
+        position:relative;
+        border-style: groove;
+        border-width: 1px;
+        margin:auto;
+        padding: 10px 10px;
+        text-align: center;
+        position:absolute;
+        z-index: 1;
+}
+.card3:hover .hidden3 {
+    display:block;
+    right:-15em;
+    bottom:15em;
+}
+
+
+
+
+
+
+
+.card4 {
+    
+    width: 250px;
+    margin: 0 10px;
+    position: relative;
+   
+}
+.card4 img {
+    width: 100%;
+    display: block;
+}
+.card4 i {
+    font-size: 0.9em;
+    margin-right: 8px;
+}
+.card4 .container {
+    margin: 10px;
+    font-size: small;
+}
+.hidden4 {
+    box-sizing: border-box;
+    background-color: rgb(247, 238, 238);
+    display:none;
+    border-radius: 3px;
+    position:relative;
+    border-style: groove;
+    border-width: 1px;
+    margin:auto;
+    padding: 10px 10px;
+    text-align: center;
+    position:absolute
+}
+.card4:hover .hidden4 {
+    display:block;
+    left:-15em;
+    bottom:15em;
+}
+
+
+.list_container {
+    display:grid;
+    justify-content: center;
+    align-items:center;
+    background-color: blanchedalmond;
+}
+ul {
+    list-style-image: url(https://mdn.mozillademos.org/files/11981/starsolid.gif);
+}
+
+.page_center {
+   
+    height: 25rem;
+    overflow: hidden;
+    border: 1px solid black;
+    background-image: url(img/udemy_background.jpg  );
+    margin-bottom: 50px;
+    position: relative
+}
+
+.page_center .img {
+    max-width: 100%;
+    height: auto;
+}
+
+.center_message {
+    box-sizing: border-box;
+    background-color: white;
+    border-style:groove;
+    width: 34rem;
+    left: 2.4rem;
+    top: 2.4rem;
+    margin: 10px 20px; 
+    
+}
